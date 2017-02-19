@@ -17,6 +17,7 @@
 
 use yii\helpers\Html;
 use yongtiger\adminlteasset\AdminLteAsset;
+use yongtiger\adminlteasset\widgets\Alert;
 
 AdminLteAsset::register($this);
 ?>
@@ -34,6 +35,7 @@ AdminLteAsset::register($this);
 
 <?php $this->beginBody() ?>
 
+	<?= Alert::widget() ?>
     <?= $content ?>
 
 <?php $this->endBody() ?>
