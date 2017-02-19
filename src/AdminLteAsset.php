@@ -37,7 +37,20 @@ class AdminLteAsset extends AssetBundle
     {
         // Append skin color file if specified
         if ($this->skin) {
-            if (('_all-skins' !== $this->skin) && (strpos($this->skin, 'skin-') !== 0)) {
+            if (('_all-skins' !== $this->skin) && !in_array($this->skin, [
+                "skin-blue",
+                "skin-black",
+                "skin-red",
+                "skin-yellow",
+                "skin-purple",
+                "skin-green",
+                "skin-blue-light",
+                "skin-black-light",
+                "skin-red-light",
+                "skin-yellow-light",
+                "skin-purple-light",
+                "skin-green-light"
+            ])) {
                 throw new Exception('Invalid skin specified');
             }
 

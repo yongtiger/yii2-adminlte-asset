@@ -7,7 +7,6 @@
 
 namespace yongtiger\adminlteasset\widgets;
 
-use yii\bootstrap\Alert as BootstrapAlert;
 use yii\bootstrap\Widget;
 
 /**
@@ -91,11 +90,11 @@ class Alert extends Widget
                     $this->options['class'] = $this->alertTypes[$type]['class'] . $appendCss;
                     $this->options['id'] = $this->getId() . '-' . $type;
 
-                    echo BootstrapAlert::widget([
-                            'body' => $this->alertTypes[$type]['icon'] . $message,
-                            'closeButton' => $this->closeButton,
-                            'options' => $this->options,
-                        ]);
+                    echo yii\bootstrap\Alert::widget([
+                        'body' => $this->alertTypes[$type]['icon'] . $message,
+                        'closeButton' => $this->closeButton,
+                        'options' => $this->options,
+                    ]);
                 }
                 if ($this->isAjaxRemoveFlash && !\Yii::$app->request->isAjax) {
                     $session->removeFlash($type);
