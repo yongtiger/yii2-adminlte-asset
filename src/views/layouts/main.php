@@ -30,7 +30,7 @@
  * Other examplse classes: `fixed`, `sidebar-collapse`, `sidebar-open`, `layout-boxed`, `layout-top-nav`, etc.
  * @see https://almsaeedstudio.com/themes/AdminLTE/documentation/index.html#layout
  *
- * Sets the params parameter for the current view:
+ * Sets the params parameter `bodyClass` for the current view:
  *
  * ```php
  * public function actionIndex()
@@ -79,7 +79,7 @@ if ($this->context->action->id === 'login') {
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
     </head>
-    <body class="hold-transition <?= isset($this->params['bodyClass']) ? $this->params['bodyClass'] : 'skin-blue sidebar-mini'?>"><!--///[yii2-adminlte-asset]-->
+    <body class="hold-transition <?= isset($this->params['bodyClass']) ? $this->params['bodyClass'] : 'skin-blue sidebar-mini'?>"><!--///[yii2-adminlte-asset]bodyClass-->
     
     <?php $this->beginBody() ?>
         <div class="wrapper">
