@@ -36,7 +36,7 @@ $this->title = 'Sign In';
         <?= $form
             ->field($model, 'username', [
                 'options' => ['class' => 'form-group has-feedback'],
-                'inputTemplate' => "{input}<span class='glyphicon glyphicon-envelope form-control-feedback'></span>"
+                'inputTemplate' => "{input}<span class='glyphicon glyphicon-user form-control-feedback'></span>"
             ])
             ->label(false)
             ->textInput(['placeholder' => $model->getAttributeLabel('username')]) ?>

@@ -45,6 +45,7 @@
 
 use yii\helpers\Html;
 use yongtiger\adminlteasset\AdminLteAsset;
+use yongtiger\adminlteasset\AdminLtePlugins;
 
 if ($this->context->action->id === 'login') { 
 

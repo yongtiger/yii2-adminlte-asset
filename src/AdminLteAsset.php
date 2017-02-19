@@ -6,7 +6,6 @@ use yii\web\AssetBundle;
 
 /**
  * AdminLte AssetBundle
- * @since 0.1
  */
 class AdminLteAsset extends AssetBundle
 {
@@ -15,7 +14,8 @@ class AdminLteAsset extends AssetBundle
         'css/AdminLTE.min.css',
     ];
     public $js = [
-        'js/app.min.js'
+        'js/app.min.js',
+        'js/demo.js',   ///[yii2-adminlte-asset]demo
     ];
     public $depends = [
         'rmrevin\yii\fontawesome\AssetBundle',

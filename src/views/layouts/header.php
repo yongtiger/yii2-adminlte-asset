@@ -13,6 +13,19 @@
 /**
  * @var $this yii\base\View
  * @var $directoryAsset string
+ * @var $userAvatar string User's avatar image url
+ *
+ * Sets the params parameter `userRole` for the current view:
+ *
+ * ```php
+ * public function actionIndex()
+ * {
+ *     Yii::$app->view->params['userRole'] = 'role_admin';
+ * 
+ *     return $this->render('index');
+ * }
+ * ```
+ *
  */
 
 use yii\helpers\Html;
@@ -37,12 +50,12 @@ use yii\helpers\Html;
                 <li class="dropdown messages-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-envelope-o"></i>
-                        <span class="label label-success">4</span>
+                        <span class="label label-success">4<!--///??????[yii2-adminlte-asset]--></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="header">You have 4 messages</li>
+                        <li class="header">You have 4<!--///??????[yii2-adminlte-asset]--> messages</li>
                         <li>
-                            <!-- inner menu: contains the actual data -->
+                            <!-- inner menu: contains the actual data --><!--///??????[yii2-adminlte-asset]-->
                             <ul class="menu">
                                 <li><!-- start message -->
                                     <a href="#">
@@ -58,58 +71,6 @@ use yii\helpers\Html;
                                     </a>
                                 </li>
                                 <!-- end message -->
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user3-128x128.jpg" class="img-circle"
-                                                 alt="user image"/>
-                                        </div>
-                                        <h4>
-                                            AdminLTE Design Team
-                                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user4-128x128.jpg" class="img-circle"
-                                                 alt="user image"/>
-                                        </div>
-                                        <h4>
-                                            Developers
-                                            <small><i class="fa fa-clock-o"></i> Today</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user3-128x128.jpg" class="img-circle"
-                                                 alt="user image"/>
-                                        </div>
-                                        <h4>
-                                            Sales Department
-                                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <div class="pull-left">
-                                            <img src="<?= $directoryAsset ?>/img/user4-128x128.jpg" class="img-circle"
-                                                 alt="user image"/>
-                                        </div>
-                                        <h4>
-                                            Reviewers
-                                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                                        </h4>
-                                        <p>Why not buy a new awesome theme?</p>
-                                    </a>
-                                </li>
                             </ul>
                         </li>
                         <li class="footer"><a href="#">See All Messages</a></li>
@@ -118,12 +79,12 @@ use yii\helpers\Html;
                 <li class="dropdown notifications-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-bell-o"></i>
-                        <span class="label label-warning">10</span>
+                        <span class="label label-warning">10<!--///??????[yii2-adminlte-asset]--></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="header">You have 10 notifications</li>
+                        <li class="header">You have 10<!--///??????[yii2-adminlte-asset]--> notifications</li>
                         <li>
-                            <!-- inner menu: contains the actual data -->
+                            <!-- inner menu: contains the actual data --><!--///??????[yii2-adminlte-asset]-->
                             <ul class="menu">
                                 <li>
                                     <a href="#">
@@ -161,29 +122,13 @@ use yii\helpers\Html;
                 <li class="dropdown tasks-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <i class="fa fa-flag-o"></i>
-                        <span class="label label-danger">9</span>
+                        <span class="label label-danger">9<!--///??????[yii2-adminlte-asset]--></span>
                     </a>
                     <ul class="dropdown-menu">
-                        <li class="header">You have 9 tasks</li>
+                        <li class="header">You have 9<!--///??????[yii2-adminlte-asset]--> tasks</li>
                         <li>
-                            <!-- inner menu: contains the actual data -->
+                            <!-- inner menu: contains the actual data --><!--///??????[yii2-adminlte-asset]-->
                             <ul class="menu">
-                                <li><!-- Task item -->
-                                    <a href="#">
-                                        <h3>
-                                            Design some buttons
-                                            <small class="pull-right">20%</small>
-                                        </h3>
-                                        <div class="progress xs">
-                                            <div class="progress-bar progress-bar-aqua" style="width: 20%"
-                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
-                                                 aria-valuemax="100">
-                                                <span class="sr-only">20% Complete</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <!-- end task item -->
                                 <li><!-- Task item -->
                                     <a href="#">
                                         <h3>
@@ -200,38 +145,6 @@ use yii\helpers\Html;
                                     </a>
                                 </li>
                                 <!-- end task item -->
-                                <li><!-- Task item -->
-                                    <a href="#">
-                                        <h3>
-                                            Some task I need to do
-                                            <small class="pull-right">60%</small>
-                                        </h3>
-                                        <div class="progress xs">
-                                            <div class="progress-bar progress-bar-red" style="width: 60%"
-                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
-                                                 aria-valuemax="100">
-                                                <span class="sr-only">60% Complete</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <!-- end task item -->
-                                <li><!-- Task item -->
-                                    <a href="#">
-                                        <h3>
-                                            Make beautiful transitions
-                                            <small class="pull-right">80%</small>
-                                        </h3>
-                                        <div class="progress xs">
-                                            <div class="progress-bar progress-bar-yellow" style="width: 80%"
-                                                 role="progressbar" aria-valuenow="20" aria-valuemin="0"
-                                                 aria-valuemax="100">
-                                                <span class="sr-only">80% Complete</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <!-- end task item -->
                             </ul>
                         </li>
                         <li class="footer">
@@ -243,21 +156,22 @@ use yii\helpers\Html;
 
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-                        <span class="hidden-xs">Alexander Pierce</span>
+                        <img src="<?= isset($this->params['userAvatar']) ? $this->params['userAvatar'] : $directoryAsset . '/img/user2-160x160.jpg' ?>" class="user-image" alt="User Avatar"/><!--///[yii2-adminlte-asset]userAvatar-->
+                        <span class="hidden-xs"><?= \Yii::$app->user->identity->username ?><!--///[yii2-adminlte-asset]username--></span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->
                         <li class="user-header">
-                            <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="img-circle"
-                                 alt="User Image"/>
+                            <img src="<?= isset($this->params['userAvatar']) ? $this->params['userAvatar'] : $directoryAsset . '/img/user2-160x160.jpg' ?>" class="img-circle" alt="User Avatar"/><!--///[yii2-adminlte-asset]userAvatar-->
 
                             <p>
-                                Alexander Pierce - Web Developer
-                                <small>Member since Nov. 2012</small>
+                                <?= \Yii::$app->user->identity->username ?><!--///[yii2-adminlte-asset]username-->
+                                <?= isset($this->params['userRole']) ? ' - ' . $this->params['userRole'] : '' ?><!--///[yii2-adminlte-asset]userRole-->
+                                <small>Member since Nov. 2012<!--///??????[yii2-adminlte-asset]--></small>
                             </p>
                         </li>
-                        <!-- Menu Body -->
+
+                        <!-- Menu Body --><!--///??????[yii2-adminlte-asset]-->
                         <li class="user-body">
                             <div class="col-xs-4 text-center">
                                 <a href="#">Followers</a>
@@ -270,9 +184,10 @@ use yii\helpers\Html;
                             </div>
                         </li>
                         <!-- Menu Footer-->
+                        
                         <li class="user-footer">
                             <div class="pull-left">
-                                <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                <a href="#" class="btn btn-default btn-flat">Profile</a><!--///??????[yii2-adminlte-asset]-->
                             </div>
                             <div class="pull-right">
                                 <?= Html::a(

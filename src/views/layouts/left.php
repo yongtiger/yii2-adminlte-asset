@@ -44,7 +44,7 @@ use yongtiger\admin\components\MenuHelper;
             </div>
             <div class="pull-left info">
                 <p>
-                    <?= \Yii::$app->user->identity->username ?><!--///[yii2-adminlte-asset]-->
+                    <?= \Yii::$app->user->identity->username ?><!--///[yii2-adminlte-asset]username-->
                 </p>
             </div>
         </div>
