@@ -90,7 +90,7 @@ class Alert extends Widget
                     $this->options['class'] = $this->alertTypes[$type]['class'] . $appendCss;
                     $this->options['id'] = $this->getId() . '-' . $type;
 
-                    echo yii\bootstrap\Alert::widget([
+                    echo \yii\bootstrap\Alert::widget([
                         'body' => $this->alertTypes[$type]['icon'] . $message,
                         'closeButton' => $this->closeButton,
                         'options' => $this->options,
