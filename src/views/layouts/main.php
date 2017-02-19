@@ -47,6 +47,16 @@ use yii\helpers\Html;
 use yongtiger\adminlteasset\AdminLteAsset;
 use yongtiger\adminlteasset\AdminLtePlugins;
 
+///[yii2-adminlte-asset]register AppAsset in advanced or basic template
+if (class_exists('backend\assets\AppAsset')) {
+    call_user_func('backend\assets\AppAsset::register', $this);
+} else {
+    call_user_func('app\assets\AppAsset::register', $this);
+}
+
+///[yii2-adminlte-asset]register AdminLteAsset
+AdminLteAsset::register($this);
+
 if ($this->context->action->id === 'login') { 
 
     echo $this->render(
@@ -55,16 +65,6 @@ if ($this->context->action->id === 'login') {
     );
     
 } else {
-
-    ///[yii2-adminlte-asset]register AppAsset in advanced or basic template
-    if (class_exists('backend\assets\AppAsset')) {
-        call_user_func('backend\assets\AppAsset::register', $this);
-    } else {
-        call_user_func('app\assets\AppAsset::register', $this);
-    }
-
-    ///[yii2-adminlte-asset]register AdminLteAsset
-    AdminLteAsset::register($this);
 
     $directoryAsset = \Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
     ?>

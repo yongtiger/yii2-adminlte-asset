@@ -1,4 +1,4 @@
-# yii2-adminlte-asset v0.0.0 (Initial commit)
+# yii2-adminlte-asset v0.0.6 (fix:main main-login)
 
 [![Latest Stable Version](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/v/stable)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset)
 [![Total Downloads](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/downloads)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset) 

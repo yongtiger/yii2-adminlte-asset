@@ -16,10 +16,8 @@
  */
 
 use yii\helpers\Html;
-use yongtiger\adminlteasset\AdminLteAsset;
 use yongtiger\adminlteasset\widgets\Alert;
 
-AdminLteAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
