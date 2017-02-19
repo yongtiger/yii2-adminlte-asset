@@ -19,7 +19,7 @@
 use yii\helpers\Html;
 use yongtiger\adminlteasset\AdminLteAsset;
 
-if (\Yii::$app->controller->action->id === 'login') { 
+if ($this->context->action->id === 'login') { 
 
     echo $this->render(
         'main-login',
@@ -30,9 +30,9 @@ if (\Yii::$app->controller->action->id === 'login') {
 
     ///[yii2-adminlte-asset]register AppAsset in advanced or basic template
     if (class_exists('backend\assets\AppAsset')) {
-        backend\assets\AppAsset::register($this);
+        call_user_func('backend\assets\AppAsset::register', $this);
     } else {
-        app\assets\AppAsset::register($this);
+        call_user_func('app\assets\AppAsset::register', $this);
     }
 
     ///[yii2-adminlte-asset]register AdminLteAsset
