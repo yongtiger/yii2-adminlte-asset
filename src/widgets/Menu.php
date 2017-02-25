@@ -1,4 +1,15 @@
-<?php
+<?php ///[yii2-adminlte-asset]
+
+/**
+ * Yii2 adminlte asset
+ *
+ * @link        http://www.brainbook.cc
+ * @see         https://github.com/yongtiger/adminlte-asset
+ * @author      Tiger Yong <tigeryang.brainbook@outlook.com>
+ * @copyright   Copyright (c) 2017 BrainBook.CC
+ * @license     http://opensource.org/licenses/MIT
+ */
+
 namespace yongtiger\adminlteasset\widgets;
 
 use Yii;
@@ -19,6 +30,7 @@ class Menu extends \yii\widgets\Menu
     public $submenuTemplate = "\n<ul class='treeview-menu' {show}>\n{items}\n</ul>\n";
     public $activateParents = true;
     public $defaultIconHtml = '<i class="fa fa-circle-o"></i> ';
+
     /**
      * @inheritdoc
      */
@@ -57,6 +69,7 @@ class Menu extends \yii\widgets\Menu
             return strtr($template, $replace);
         }
     }
+
     /**
      * Recursively renders the menu items (without the container tag).
      * @param array $items the menu items to be rendered recursively
@@ -97,6 +110,7 @@ class Menu extends \yii\widgets\Menu
         }
         return implode("\n", $lines);
     }
+
     /**
      * @inheritdoc
      */
@@ -136,6 +150,7 @@ class Menu extends \yii\widgets\Menu
         }
         return array_values($items);
     }
+    
     /**
      * Checks whether a menu item is active.
      * This is done by checking if [[route]] and [[params]] match that specified in the `url` option of the menu item.

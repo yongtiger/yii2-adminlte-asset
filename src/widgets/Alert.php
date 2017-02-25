@@ -1,8 +1,13 @@
-<?php
+<?php ///[yii2-adminlte-asset]
+
 /**
- * @link http://www.yiiframework.com/
- * @copyright Copyright (c) 2008 Yii Software LLC
- * @license http://www.yiiframework.com/license/
+ * Yii2 adminlte asset
+ *
+ * @link        http://www.brainbook.cc
+ * @see         https://github.com/yongtiger/adminlte-asset
+ * @author      Tiger Yong <tigeryang.brainbook@outlook.com>
+ * @copyright   Copyright (c) 2017 BrainBook.CC
+ * @license     http://opensource.org/licenses/MIT
  */
 
 namespace yongtiger\adminlteasset\widgets;
@@ -23,7 +28,7 @@ use yii\bootstrap\Widget;
  * \Yii::$app->getSession()->setFlash('error', ['Error 1', 'Error 2']);
  * ```
  *
- * @author Evgeniy Tkachenko <et.coder@gmail.com>
+ * @package yongtiger\adminlteasset\widgets
  */
 class Alert extends Widget
 {
