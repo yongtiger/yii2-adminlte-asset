@@ -182,7 +182,7 @@ use yii\helpers\Html;
                             <div class="pull-right">
                                 <?= Html::a(
                                     'Sign out',
-                                    ['/site/logout'],
+                                    isset($this->params['logoutUrl']) ? $this->params['logoutUrl'] : ['/site/logout'],  ///[yii2-adminlte-asset v0.0.8 (view params)]
                                     ['data-method' => 'post', 'class' => 'btn btn-default btn-flat']
                                 ) ?>
                             </div>

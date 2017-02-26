@@ -70,7 +70,7 @@ if ($this->context->action->id === 'login') {
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
     </head>
-    <body class="hold-transition <?= isset($this->params['bodyClass']) ? $this->params['bodyClass'] : 'skin-blue sidebar-mini'?>"><!--///[yii2-adminlte-asset]bodyClass-->
+    <body class="hold-transition <?= isset($this->params['bodyClass']) ? $this->params['bodyClass'] : 'skin-blue sidebar-mini' ?>"><!--///[yii2-adminlte-asset]bodyClass-->
     
     <?php $this->beginBody() ?>
         <div class="wrapper">

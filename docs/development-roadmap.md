@@ -1,5 +1,19 @@
 # Development roadmap
 
+
+## v0.0.8 (view params)
+
+```php
+'view' => [
+    'params' => [
+        ///[yii2-adminlte-asset v0.0.8 (view params)]
+        'logoutUrl' => ['/site/logout'],
+    ],
+    // ...
+]
+```
+
+
 ## v0.0.7 (reconstruction)
 
 
