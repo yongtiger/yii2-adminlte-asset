@@ -1,6 +1,6 @@
 # Development roadmap
 
-## v0.0.11 (call_user_func([$alertClassName, 'widget']))
+## v0.0.11 ($this->params['alertClassName'] callable)
 
 
 ## v0.0.10 (typo)
