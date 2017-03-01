@@ -1,4 +1,4 @@
-# yii2-adminlte-asset v0.0.8 (view params)
+# yii2-adminlte-asset v0.0.9 (call_user_func([\Yii::$app->getModule('admin')->alertClassName, 'widget']))
 
 [![Latest Stable Version](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/v/stable)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset)
 [![Total Downloads](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/downloads)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset) 

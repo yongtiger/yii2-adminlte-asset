@@ -8,7 +8,6 @@
 use yii\helpers\Html;
 use yii\helpers\Inflector;
 use yii\widgets\Breadcrumbs;
-use yongtiger\adminlteasset\widgets\Alert;
 
 ?>
 
@@ -39,7 +38,7 @@ use yongtiger\adminlteasset\widgets\Alert;
     </section>
 
     <section class="content">
-        <?= Alert::widget() ?>
+        <?= call_user_func([\Yii::$app->getModule('admin')->alertClassName, 'widget']); ?>
         <?= $content ?>
     </section>
 </div>

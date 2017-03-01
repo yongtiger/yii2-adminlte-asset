@@ -6,7 +6,6 @@
  */
 
 use yii\helpers\Html;
-use yongtiger\adminlteasset\widgets\Alert;
 
 ?>
 <?php $this->beginPage() ?>
@@ -23,7 +22,7 @@ use yongtiger\adminlteasset\widgets\Alert;
 
 <?php $this->beginBody() ?>
 
-	<?= Alert::widget() ?>
+	<?= call_user_func([\Yii::$app->getModule('admin')->alertClassName, 'widget']); ?>
     <?= $content ?>
 
 <?php $this->endBody() ?>
