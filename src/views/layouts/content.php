@@ -3,6 +3,7 @@
 /**
  * @var $this yii\base\View
  * @var $content string
+ * @var $alertClassName callable
  */
 
 use yii\helpers\Html;
@@ -38,7 +39,7 @@ use yii\widgets\Breadcrumbs;
     </section>
 
     <section class="content">
-        <?= call_user_func([\Yii::$app->getModule('admin')->alertClassName, 'widget']); ?>
+        <?= call_user_func([$alertClassName, 'widget']); ?>
         <?= $content ?>
     </section>
 </div>

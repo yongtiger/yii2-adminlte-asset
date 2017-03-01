@@ -1,4 +1,4 @@
-# yii2-adminlte-asset v0.0.10 (typo)
+# yii2-adminlte-asset v0.0.11 (call_user_func([$alertClassName, 'widget']))
 
 [![Latest Stable Version](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/v/stable)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset)
 [![Total Downloads](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/downloads)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset) 
