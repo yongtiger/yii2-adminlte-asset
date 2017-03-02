@@ -1,4 +1,4 @@
-# yii2-adminlte-asset v0.0.11 ($this->params['alertClassName'] callable)
+# yii2-adminlte-asset v0.0.12 (replace into `home` in header.php)
 
 [![Latest Stable Version](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/v/stable)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset)
 [![Total Downloads](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/downloads)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset) 

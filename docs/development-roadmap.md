@@ -1,5 +1,8 @@
 # Development roadmap
 
+## v0.0.12 (replace into `Home` in header.php)
+
+
 ## v0.0.11 ($this->params['alertClassName'] callable)
 
 
