@@ -25,8 +25,8 @@ class AdminLteAsset extends AssetBundle
         'css/AdminLTE.min.css',
     ];
     public $js = [
-        'js/adminlte.min.js',
-        'js/app.min.js',
+        // 'js/app.min.js',
+        'js/adminlte.min.js',   ///[v0.0.13 (UGD# AdminLTE 2.4.0)]
         'js/demo.js',   ///[yii2-adminlte-asset]demo
     ];
     public $depends = [

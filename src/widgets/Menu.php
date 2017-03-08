@@ -82,7 +82,7 @@ class Menu extends \yii\widgets\Menu
         foreach ($items as $i => $item) {
             $options = array_merge($this->itemOptions, ArrayHelper::getValue($item, 'options', []));
             $tag = ArrayHelper::remove($options, 'tag', 'li');
-            $class = [];
+            $class = empty($item['items']) ? [] : ['class' => 'treeview'];  ///[v0.0.13 (UGD# AdminLTE 2.4.0)]
             if ($item['active']) {
                 $class[] = $this->activeCssClass;
             }

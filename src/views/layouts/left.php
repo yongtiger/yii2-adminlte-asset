@@ -55,13 +55,18 @@ use yongtiger\admin\components\MenuHelper;
                 $return['options'] = $data; 
             } 
 
-            (!isset($return['icon']) || !$return['icon']) && $return['icon'] = 'fa fa-circle-o'; 
-            $items && $return['items'] = $items; 
+            if (!isset($return['icon']) || !$return['icon']) {
+                $return['icon'] = 'fa fa-circle-o'; 
+            } 
+
+            if (!empty($items)) {
+                $return['items'] = $items;
+            }
             return $return; 
         }; 
 
         echo Menu::widget( [ 
-            'options' => ['class' => 'sidebar-menu'], 
+            'options' => ['class' => 'sidebar-menu', 'data-widget' => 'tree'], ///[v0.0.13 (UGD# AdminLTE 2.4.0)]
             'items' => MenuHelper::getAssignedMenu(\Yii::$app->user->id, null, $callback), 
         ] );
         ?>
