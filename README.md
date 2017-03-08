@@ -1,4 +1,4 @@
-# yii2-adminlte-asset v0.0.12 (replace into `home` in header.php)
+# yii2-adminlte-asset v0.0.13 (UGD#)
 
 [![Latest Stable Version](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/v/stable)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset)
 [![Total Downloads](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/downloads)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset) 
