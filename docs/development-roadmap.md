@@ -1,5 +1,8 @@
 # Development roadmap
 
+## v0.0.14 (CHG# layouts/footer.php)
+
+
 ## v0.0.13 (UGD# AdminLTE 2.4.0)
 
 
