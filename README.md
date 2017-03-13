@@ -1,4 +1,4 @@
-# yii2-adminlte-asset v0.0.14 (CHG# layouts/footer.php)
+# yii2-adminlte-asset v0.0.15 (FIX# content.php: call_user_func: 'common/widgets/Alert')
 
 [![Latest Stable Version](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/v/stable)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset)
 [![Total Downloads](https://poser.pugx.org/yongtiger/yii2-adminlte-asset/downloads)](https://packagist.org/packages/yongtiger/yii2-adminlte-asset) 

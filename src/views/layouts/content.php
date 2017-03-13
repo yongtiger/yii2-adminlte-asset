@@ -39,7 +39,7 @@ use yii\widgets\Breadcrumbs;
     </section>
 
     <section class="content">
-        <?= call_user_func([isset($this->params['alertClassName']) ? $this->params['alertClassName'] : ['common/widgets/Alert'], 'widget']); ?>
+        <?= call_user_func([isset($this->params['alertClassName']) ? $this->params['alertClassName'] : 'common\\widgets\\Alert', 'widget']); ?>
         <?= $content ?>
     </section>
 </div>
