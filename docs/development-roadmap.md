@@ -1,5 +1,8 @@
 # Development roadmap
 
+## v0.0.17 (remove cebe/yii2-gravatar)
+
+
 ## v0.0.16 (FIX# main-login.php: call_user_func: 'common/widgets/Alert')
 
 
